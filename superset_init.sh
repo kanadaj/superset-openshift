@@ -4,6 +4,7 @@ set -ex
 echo SUPERSET_CONFIG_PATH from Env: $SUPERSET_CONFIG_PATH
 
 export SUPERSET_CONFIG_PATH=${SUPERSET_CONFIG_PATH:-/etc/superset/superset_config.py}
+export FLASK_APP=superset
 
 # Make sure we have a config - fail if not
 if [ ! -f ${SUPERSET_CONFIG_PATH} ]; then
