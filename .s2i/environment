@@ -1,4 +1,4 @@
 APP_CONFIG=config.py
-APP_MODULE=superset:app
+APP_MODULE=superset.app:create_app()
 APP_HOME=/opt/app-root/src
 UPGRADE_PIP_TO_LATEST=1
